@@ -19,6 +19,22 @@ public class GameSettingData
 [Serializable]
 public class GameDynamicData
 {
+    // 선택 스위치 컨트롤러가 RS232로 보내는 문자열 (앞뒤 공백/줄바꿈 제거 후 대소문자 무시 비교)
+    public string leftSwitchCommand = "L";
+    public string rightSwitchCommand = "R";
+    // 같은 스위치의 연속 입력을 무시하는 시간(초). 채터링/연타 방지.
+    public float inputDebounceSeconds = 0.2f;
+
+    // 공간 선택 화면에서 입력이 없을 때 가운데 공간을 자동 선택하기까지의 시간(초)
+    public float mapAutoSelectSeconds = 10f;
+    // 토너먼트 경기에서 선택 후 다음 경기로 넘어가기 전 강조 효과 시간(초)
+    public float selectEffectSeconds = 0.4f;
+    // 최종 결과 화면의 순차 공개 간격(초)
+    public float resultRevealInterval = 0.8f;
+    // 대기 화면이 아닐 때 이 시간(초) 동안 입력이 없으면 대기 화면으로 복귀. 0 이하이면 사용 안 함.
+    public float idleReturnSeconds = 90f;
+    // 토너먼트 참가 후보 수 (2의 거듭제곱). 기본 16강.
+    public int bracketSize = 16;
 }
 
 [Serializable]

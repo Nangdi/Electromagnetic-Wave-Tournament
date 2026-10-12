@@ -1,0 +1,10 @@
+{
+    "leftSwitchCommand": "L",
+    "rightSwitchCommand": "R",
+    "inputDebounceSeconds": 0.20000000298023225,
+    "mapAutoSelectSeconds": 10.0,
+    "selectEffectSeconds": 0.4000000059604645,
+    "resultRevealInterval": 0.800000011920929,
+    "idleReturnSeconds": 90.0,
+    "bracketSize": 16
+}
